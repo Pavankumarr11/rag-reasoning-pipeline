@@ -1,0 +1,13 @@
+# Core ML & NLP
+transformers>=4.40.0
+datasets>=2.18.0
+torch>=2.1.0
+
+# Efficient fine-tuning (optional but recommended for real LoRA)
+peft>=0.10.0
+
+# Text similarity / retrieval
+scikit-learn>=1.4.0
+
+# PDF support (optional — only needed for PDF ingestion)
+pymupdf>=1.23.0
