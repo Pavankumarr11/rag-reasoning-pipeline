@@ -1,4 +1,4 @@
-# PROJECT_V2 — AI Engineer Assignment
+# AI Reasoning System — Document Ingestion + LoRA Training + Query Router
 
 A clean, modular Python project implementing:
 
@@ -123,3 +123,25 @@ print(route_query("Who wrote Hamlet?"))        # → general
 | Retrieval | TF-IDF cosine similarity | No vector DB required, works offline |
 | Training | LoRA on distilgpt2 | Efficient; degrades gracefully without PEFT |
 | Router | Keyword matching | Zero latency, fully explainable |
+
+---
+
+## ⚠️ Limitations
+
+* Uses TF-IDF instead of semantic embeddings (may miss contextual similarity)
+* Router is rule-based (not ML-based)
+* Limited training samples (3000 GSM8K subset)
+* No UI or API layer yet
+
+---
+
+## 🚀 Future Improvements
+
+* Replace TF-IDF with vector embeddings (FAISS / ChromaDB)
+* Upgrade router using LLM-based classification
+* Add FastAPI endpoint for production usage
+* Integrate RAG pipeline with LLM responses
+* Deploy on cloud (AWS / Hugging Face Spaces)
+
+---
+
